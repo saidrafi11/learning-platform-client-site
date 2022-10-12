@@ -26,6 +26,9 @@ const Nav = () => {
          <li class="nav-item">
           <Link class="nav-link active" to="blog">Blog</Link>
         </li>
+         <li class="nav-item">
+          <Link class="nav-link active" to="description">Description</Link>
+        </li>
       </ul>
       
     </div>

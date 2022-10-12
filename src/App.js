@@ -7,6 +7,7 @@ import QuizPage from './Components/QuizPage';
 import Blog from './Components/Blog';
 import Stat from './Components/Stat';
 import ErrorPage from './Components/ErrorPage';
+import Discription from './Components/Discription';
 
 const router = createBrowserRouter([
 {
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
     {
       path:'statistics',
       element:<Stat></Stat>
+    },
+    {
+      path:'description',
+      element:<Discription></Discription>
     }
 
     
