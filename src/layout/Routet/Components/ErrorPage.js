@@ -7,13 +7,7 @@ const ErrorPage = () => {
   return (
     <>
       
-      <div className='container'>
-        <h1 >Ops! An Error Ocurred!</h1>
-        <div>
-        <p>{error.statusText || error.message}</p>
-        <p>{error.status}</p>
-      </div>
-      </div>
+      
       
     </>
   )
