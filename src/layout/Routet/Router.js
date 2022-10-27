@@ -23,12 +23,12 @@ export const routes = createBrowserRouter([
         {
             path:'/',
             element: <Courses></Courses>,
-            loader:()=> fetch('http://localhost:5000/courses'),
+            loader:()=> fetch('https://learning-platform-server-beta.vercel.app/courses'),
             children:[
                 {
                     path:'/',
                     element:<CategoryCard></CategoryCard>,
-                    loader: ()=>fetch('http://localhost:5000/course-categories')
+                    loader: ()=>fetch('https://learning-platform-server-beta.vercel.app/course-categories')
 
                 }
             
@@ -47,7 +47,7 @@ export const routes = createBrowserRouter([
         {
             path:'/course/:id',
             element: <CourseDetails></CourseDetails>,
-            loader:({params})=>fetch(`http://localhost:5000/course/${params.id}`)
+            loader:({params})=>fetch(`https://learning-platform-server-beta.vercel.app/course/${params.id}`)
         },
         {
             path:'signup',
@@ -61,7 +61,7 @@ export const routes = createBrowserRouter([
             
                 path:'/checkout/:id',
                 element: <PrivateRoute><Checkout></Checkout></PrivateRoute>,
-                loader:({params})=>fetch(`http://localhost:5000/checkout/${params.id}`)
+                loader:({params})=>fetch(`https://learning-platform-server-beta.vercel.app/checkout/${params.id}`)
             
         
         }
