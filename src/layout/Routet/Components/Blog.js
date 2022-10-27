@@ -20,7 +20,7 @@ const Blog = () => {
       <h1>What is Node?</h1>
       <p>Node allows developers to write JavaScript code that runs directly in a computer process itself instead of in a browser.</p>
 <h1>How does Node work?</h1>
-<p>It is a used as backend service where javascript works on the server-side of the application. This way javascript is used on both frontend and backend. Node. js runs on chrome v8 engine which converts javascript code into machine code, it is highly scalable, lightweight, fast, and data-intensive.</p>
+
     </blockquote>
   </div>
 </div>
